@@ -25,7 +25,7 @@ Before submitting:
 - [x] Both statements open the README and the memo (the videos still need them)
 - [x] Draft box removed from the memo; "Who decided what" table filled in (re-read it so you can stand behind it)
 - [x] Locked Changed-Input Record: prediction committed before the run (bfaa11a, 14:22 UTC); result added after (run about 14:24 UTC)
-- [ ] Rows 9 and 10 of the Locked record (Claude's drafts) reviewed by me
+- [x] Rows 9 and 10 of the Locked record (Claude's drafts) reviewed and accepted by me
 - [x] Three DGS10 values checked against FRED by me, Brandon Oganovich (2026-11-20)
 - [x] README run in a fresh Python environment (Claude, 2026-11-20: installed streamlit 1.67.0, pandas 3.1.1, numpy 2.5.5; 23 tests pass; app loads with no errors); [ ] someone else ran the app from the README
 - [ ] Repository on GitHub has the folders (`data/`, `docs/`, `tests/`, `.streamlit/`) and no `.pyc` files, so the README works from it

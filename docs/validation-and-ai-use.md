@@ -1,4 +1,4 @@
-# Validation and AI use
+﻿# Validation and AI use
 
 **AI use:** I used Claude (Anthropic; Claude Code, model Claude Fable 5.2) to write and test the app and to draft this record. The optional in-app chat helper also calls Claude.
 
@@ -61,7 +61,7 @@ See `docs/decision-memo.md`. Base case (near-retiree, growth first): constrained
 
 ## 5. Locked Changed-Input Record
 
-**The prediction below is mine, made without AI, and committed to GitHub before I run the change.** I wrote my answers myself on 2026-11-20 and sent them to Claude, which copied them into this table word for word. Claude did not suggest, check or comment on the prediction. After I confirmed the prediction was committed to GitHub, Claude ran the change and filled in rows 6 to 8 from the app; rows 9 and 10 were drafted by Claude for me to review.
+**The prediction below is mine, made without AI, and committed to GitHub before I run the change.** I wrote my answers myself on 2026-11-20 and sent them to Claude, which copied them into this table word for word. Claude did not suggest, check or comment on the prediction. After I confirmed the prediction was committed to GitHub, Claude ran the change and filled in rows 6 to 8 from the app; rows 9 and 10 were drafted by Claude, and I reviewed and accepted them.
 
 Suggested change (I may pick another in the app's "Changed-input run" tab): inflation (CPI) assumption from 2.50% to 3.50%, near-retiree, growth first, sample portfolio loaded. Do not pick anything already shown in the stress run, because that result is already visible.
 
@@ -82,8 +82,8 @@ Steps, in this order:
 | Commit link and time of the prediction (before the run) | https://github.com/BrandonOganovich19/AI-In_finance-439-project2/commit/bfaa11a4f2490337260f5417afa2fec19de2983c , 2026-11-20 14:22:13 UTC (08:22 Central). Claude first ran the change after this, at about 14:24 UTC, after confirming the prediction was in this commit. |
 | Actual result (from the app) | "Changed-input run" tab, Inflation (CPI) 2.50% -> 3.50%. Constrained portfolio before / after: verdict PASS / PASS; expected return 7.27% / 7.27%; bad-year loss 9.99% / 9.99%; stocks 65.0% / 65.0%; weights 15/20/30/10/10/15 both times (VTI/VT/SCHD/IEF/LQD/BIL); 0.0% turnover. The return target rose from 5.5% to 6.5%. |
 | Expected direction vs actual direction | Stocks %: predicted no change, actual no change. Expected return: predicted no change (about 7.27%), actual no change (7.27%). Verdict: predicted still PASS, actual PASS. All three match. |
-| Effect on the decision | *(Drafted by Claude from the app's output; Brandon to confirm or edit.)* The base portfolio and the recommendation (pilot) do not change. But the margin shrinks: expected return is now 0.77 points above the 6.5% target instead of 1.77 points above 5.5%. Re-running the stress test at 3.50% CPI, three of twelve scenarios no longer reach the target (stock premium 2 points lower: 5.94%; 10-year yield 1 point lower: 6.35%; all volatilities 25% higher: 6.33%). Before, none failed. Higher inflation makes the plan more fragile, so CPI should be added to the monitoring triggers. |
-| If they differ: what I got wrong | *(Drafted by Claude; Brandon to confirm or edit.)* They did not differ. My reasoning held: CPI only moves the return target, not the estimates or the limits, and the target stayed below 7.27%. What I did not predict was the knock-on effect on the stress run (above). |
+| Effect on the decision | *(Drafted by Claude from the app's output; reviewed and accepted by me, 2026-11-20.)* The base portfolio and the recommendation (pilot) do not change. But the margin shrinks: expected return is now 0.77 points above the 6.5% target instead of 1.77 points above 5.5%. Re-running the stress test at 3.50% CPI, three of twelve scenarios no longer reach the target (stock premium 2 points lower: 5.94%; 10-year yield 1 point lower: 6.35%; all volatilities 25% higher: 6.33%). Before, none failed. Higher inflation makes the plan more fragile, so CPI should be added to the monitoring triggers. |
+| If they differ: what I got wrong | *(Drafted by Claude; reviewed and accepted by me, 2026-11-20.)* They did not differ. My reasoning held: CPI only moves the return target, not the estimates or the limits, and the target stayed below 7.27%. What I did not predict was the knock-on effect on the stress run (above). |
 
 ## 6. AI use
 
