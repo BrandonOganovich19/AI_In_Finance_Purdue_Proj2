@@ -28,6 +28,6 @@ Before submitting:
 - [x] Rows 9 and 10 of the Locked record (Claude's drafts) reviewed and accepted by me
 - [x] Three DGS10 values checked against FRED by me, Brandon Oganovich (2026-11-20)
 - [x] README run in a fresh Python environment (Claude, 2026-11-20: installed streamlit 1.67.0, pandas 3.1.1, numpy 2.5.5; 23 tests pass; app loads with no errors); [ ] someone else ran the app from the README
-- [ ] Repository on GitHub has the folders (`data/`, `docs/`, `tests/`, `.streamlit/`) and no `.pyc` files, so the README works from it
+- [x] Repository on GitHub has the folders (`data/`, `docs/`, `tests/`, `.streamlit/`) and no `.pyc` files, so the README works from it (checked 2026-11-20: all 19 files match)
 - [x] No API key or `.env` in the repository (checked on GitHub 2026-11-20)
 - [ ] Videos unlisted, viewable logged out, captions on
