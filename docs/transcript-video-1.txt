@@ -1,0 +1,16 @@
+Video 1 transcript (3:00 max): How my system and my thinking changed, and one AI output I checked
+Retirement Mandate Check | FIN 439 Project 2 | Brandon Oganovich
+
+[On screen: Title slide with both statements]
+Hi, I'm Brandon Oganovich, and this is Project 2 for FIN 439, the Retirement Mandate Check. Two statements first. I used Claude, from Anthropic, through Claude Code, to write and test this app and to draft my documents; the app's optional chat helper also calls Claude. The analysis and the decision are mine. This is education, not investment advice, and I am not a financial advisor.
+
+[On screen: Slide: Upload a portfolio, check the mandate, fix it]
+The app is for someone checking their retirement outlook. You upload a portfolio and the app checks it against a written mandate: can it reach the return target, is it weighted properly, is the risk inside the limit. If it fails, the app shows the smallest set of trades that fixes it, usually moving money from stocks into bonds and Treasury bills.
+
+[On screen: Slide: Three ways my thinking changed]
+Three things changed in my thinking. First, in Lab 13 a mandate was a document. Here it only matters if code can test every rule, so I turned the loss rule into a number: the estimated loss in a one-in-twenty bad year. Second, bonds lost money from 2021 to 2026, so historical averages would never buy them, even for someone near retirement. I anchored expected returns on the 10-year Treasury yield known on September 30th, 2026, which was 5.26 percent. Third, Claude wrote most of the code, but it asked me questions first: who the client is, which funds, what kind of helper, which signal. Those choices were mine.
+
+[On screen: Slide: One AI output I checked by hand]
+Here's one AI output I checked by hand. The app said the sample portfolio fails, and its fix is to sell 15 points of VTI and 10 of VT, and buy 15 of BIL and 10 of IEF. Stocks go from 90 percent to 35 plus 15 plus 15, which is 65 percent, exactly the cap. The largest fund is 35 percent, under the 40 percent cap. Cash goes from 5 to 20 percent, above the 5 percent minimum, and turnover is 25 percent, right at the limit. The fix does what the app claims.
+
+My honest conclusion is a pilot, not an adoption, and Video 3 explains why. Thanks for watching.

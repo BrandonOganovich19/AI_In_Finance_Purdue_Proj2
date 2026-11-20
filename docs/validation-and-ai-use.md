@@ -91,6 +91,7 @@ Steps, in this order:
 |---|---|---|---|
 | 2026-11-16 | Claude Code desktop, Claude Fable 5.2 | Read the assignment; asked me four design questions; wrote `engine.py`, `app.py`, `coach.py`, the tests; drafted README, memo and this record | 23 unit tests including hand-worked cases; **one output I checked myself: ____ (Brandon to fill in, also used in Video 1)** |
 | 2026-11-20 | Claude Code desktop, Claude Opus 5.5 | Checked the three DGS10 values against FRED; ran the README in a fresh Python environment; drafted the video scripts (`docs/video-scripts.md`); finished the memo's "Who decided what" table from my answers; copied my AI-off prediction into section 5 word for word; after the prediction was on GitHub, ran the changed input and drafted rows 9 and 10 | I read the scripts and the memo before recording and submitting |
+| 2026-11-20 | Claude Code desktop, Claude Opus 5.5 | Drafted the slides (`docs/project2-video-slides.pptx`) and the three video transcripts from the app's own figures | I read them before recording; each transcript is corrected to match what I actually said |
 | At run time, optional | Claude Opus 5.5 through the Anthropic API | In-app chat that explains the app's own numbers | Restricted to a facts block; percentages not in the facts are flagged on screen |
 | Oct 2026 | ChatGPT / Codex | Labs 13 to 17 (mandate, price downloads, FRED vintages) reused here | Lab verification files |
 

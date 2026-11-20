@@ -1,0 +1,26 @@
+Video 2 transcript (5:00 max): Code walkthrough
+Retirement Mandate Check | FIN 439 Project 2 | Brandon Oganovich
+
+[On screen: Title slide with both statements]
+This is Video 2, the code walkthrough for my Retirement Mandate Check. Two statements first. I used Claude, from Anthropic, through Claude Code, to write and test this code and to draft my documents, and the app's optional chat helper calls Claude. The analysis and the decision are mine; this is education, not investment advice.
+
+[On screen: Slide: Three files, one job each]
+The project has three Python files with one job each. engine.py does every calculation and has no Streamlit code in it. app.py is only the screen. coach.py is the helper. The data folder holds the prices and two Treasury yield files with their sources and SHA-256 hashes, and the tests folder holds 23 tests.
+
+[On screen: Slide: Expected returns start from the 10-year yield, then VS Code: engine.py (FUNDS, signal_as_of, estimates)]
+Six funds can be held: VTI, VT and SCHD for stocks, IEF and LQD for bonds, and BIL for cash. VOO is only used in the benchmark. The function signal_as_of reads the ALFRED vintage and keeps only observations before the decision date, so the signal is 5.26 percent and later data can't leak in. Then estimates builds expected returns from that yield: IEF earns the yield, LQD adds a 1 percent credit spread, stocks add a 3.5 percent premium, and every fund subtracts its expense ratio. Volatility and correlation come from 59 monthly returns.
+
+[On screen: Slide: Eight rules, then every mix in 5% steps, then VS Code: rule_table]
+The mandate is eight rules: fully invested, long-only, approved funds only, a cash reserve, a stock cap, a single-fund cap, the bad-year loss, and the return objective. The bad-year loss is minus the expected return plus 1.645 times volatility. Every rule returns pass or fail with the actual number, so the verdict names exactly what broke.
+
+[On screen: VS Code: grid, optimise, nearest_fix]
+Instead of an optimizer, grid builds every long-only mix in 5 percent steps: 53,130 portfolios. Growth first picks the highest return that passes everything. Protection first picks the lowest loss that still reaches the target. nearest_fix finds the passing portfolio that needs the least trading.
+
+[On screen: Slide: Stress run and the stop rule, then VS Code: stress_scenarios, process_decision]
+The stress run changes one input at a time across twelve scenarios: five on estimates, two on the data window, two on costs, and three on constraints. The stop rule is in process_decision: reject if the base case, or more than half the scenarios, has no passing portfolio; pilot if any scenario fails or the weights move more than 25 percent; otherwise adopt. Today's answer is pilot.
+
+[On screen: VS Code: coach.py]
+The built-in coach explains each failed rule in plain English. The optional Claude chat only sees a facts block built from the app's numbers, and if a reply contains a percentage that isn't in those facts, the app flags it on screen.
+
+[On screen: Slide: 23 tests, all passing, then the terminal: run the tests]
+Finally, the tests. They include hand-worked cases, like 50 percent in an 8 percent asset and 50 percent at 3 percent giving 5.5 percent; a check that the later yield download gives the same signal, so look-ahead is blocked; and a check that an impossible mandate returns reject. All 23 pass. Calculations in one file, the screen in another, and tests on the formulas. Thanks.

@@ -1,0 +1,29 @@
+Video 3 transcript (5:00 max): Committee presentation, opening with the app running live
+Retirement Mandate Check | FIN 439 Project 2 | Brandon Oganovich
+
+[On screen: Open on the live app: near-retiree, sample portfolio, Overview tab]
+This is my Retirement Mandate Check, running live. Two statements first. I used Claude, from Anthropic, through Claude Code, to build and test this app and to draft my documents, and its optional chat helper also calls Claude. The analysis and the decision are mine; this is education, not investment advice, and I am not a financial advisor.
+
+[On screen: Live app: Overview tab]
+The client is a near-retiree, about eight years out, with 500,000 dollars. Here is their current portfolio: 90 percent stocks, half of it in one fund. Expected return 8.3 percent, but an estimated bad-year loss of 14 percent. It fails three rules, and the app names each one. Below is the fix: sell 25 points of stock funds, and put 15 into Treasury bills and 10 into Treasuries.
+
+[On screen: Live app: click the Mandate and portfolios tab]
+Every portfolio gets the same eight rules and a pass or fail verdict, compared against a 60/40 benchmark.
+
+[On screen: Switch to the slides]
+My recommendation: approve a 12-month pilot. The app's output is a starting point that a person reviews, and trades stay inside a set range. The process passes every limit in the base case and in all twelve stress scenarios, but in four of them the fund weights move more than 25 percent, so it isn't ready to trade on automatically.
+
+[On screen: Slide: The near-retiree mandate]
+The mandate: inflation plus 3 percent, which is 5.5 percent nominal. Stocks at most 65 percent, any one fund at most 40, cash at least 5, and an estimated one-in-twenty bad-year loss of at most 10 percent.
+
+[On screen: Slide: Constrained portfolio: most return that passes]
+Against two simple baselines: equal weight passes at 6.8 percent. Inverse volatility fails, with 83 percent in Treasury bills and only 4.1 percent expected. The constrained portfolio passes at 7.3 percent with a 10 percent loss: the same expected return as the 60/40 benchmark, with less risk.
+
+[On screen: Slide: The stock/bond split holds; fund weights don't]
+Expected returns are anchored on the 10-year yield known on September 30th: 5.26 percent, the highest in ten years. In the stress run, all twelve scenarios still find a passing portfolio, with returns from 5.9 to 8.8 percent. In my locked changed-input test I raised inflation from 2.5 to 3.5 percent. I predicted no change, and the portfolio didn't change, but three stress scenarios now miss the higher target.
+
+[On screen: Slide: Allocation range and re-run triggers]
+So hold stocks between 40 and 65 percent, and treat the individual fund weights as loose. Re-run, and reverse the pilot if it then fails, if the 10-year yield moves a full point, the estimated loss goes above 10 percent, stocks drift above 70 or cash falls below 5, or the trailing year loses more than 10 percent.
+
+[On screen: Slide: What this cannot establish, and the ask]
+The limits: five years of data that include 2022, a normal-distribution loss estimate when the worst real drawdown was 17 percent, a stock premium I assumed, and no taxes or Social Security. Approve the pilot, with a person reviewing every trade. Thank you.
