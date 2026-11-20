@@ -1,0 +1,2 @@
+# Keep data files byte-for-byte so the SHA-256 hashes in data/SOURCES.md stay valid.
+data/*.csv -text
