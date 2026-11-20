@@ -1,6 +1,6 @@
 ﻿# Submission manifest
 
-Repository: https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2 (branch `main`). Attach `decision-memo.md` and `validation-and-ai-use.md` to Brightspace as well. Replace each remaining `____` with the YouTube link and duration.
+Repository: https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2 (branch `main`). Attach `decision-memo.md` and `validation-and-ai-use.md` to Brightspace as well. Videos are unlisted YouTube links (checked logged out on 2026-11-20).
 
 | Item | Location |
 |---|---|
@@ -14,9 +14,9 @@ Repository: https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2 (br
 | Decision memo | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/decision-memo.md |
 | Validation and AI use, with the Locked Changed-Input Record | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/validation-and-ai-use.md |
 | Commit holding my AI-off prediction (before the run) | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/commit/1bf5d5b13b88d0aa8b6259352a17019ee263b8f7 (2026-11-20 14:19:36 UTC) |
-| Video 1 (3:00 max): how my system and thinking changed, one AI output I checked | YouTube ____ , duration ____ |
-| Video 2 (5:00 max): code walkthrough | YouTube ____ , duration ____ |
-| Video 3 (5:00 max): committee presentation, opens with the app running live | YouTube ____ , duration ____ |
+| Video 1 (3:00 max): how my system and thinking changed, one AI output I checked | YouTube https://youtu.be/XRVO_l0M3Ss , duration 2:19 |
+| Video 2 (5:00 max): code walkthrough | YouTube https://youtu.be/BAL67QKTrsc , duration 3:37 |
+| Video 3 (5:00 max): committee presentation, opens with the app running live | YouTube https://youtu.be/QdBQSRz0pS8 , duration 4:06 |
 | Transcripts | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/transcript-video-1.txt , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/transcript-video-2.txt , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/transcript-video-3.txt |
 | Slides, one deck per video (drafted with Claude) | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/video-1-slides.pptx , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/video-2-slides.pptx , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/video-3-slides.pptx |
 
@@ -30,4 +30,4 @@ Before submitting:
 - [x] README run in a fresh Python environment (Claude, 2026-11-20: installed streamlit 1.67.0, pandas 3.1.1, numpy 2.5.5; 23 tests pass; app loads with no errors); [ ] someone else ran the app from the README
 - [x] Repository on GitHub has the folders (`data/`, `docs/`, `tests/`, `.streamlit/`) and no `.pyc` files, so the README works from it (checked 2026-11-20: all 19 files match)
 - [x] No API key or `.env` in the repository (checked on GitHub 2026-11-20)
-- [ ] Videos unlisted, viewable logged out, captions on
+- [x] Videos unlisted and viewable logged out (checked 2026-11-20); captions on for Videos 1 and 2; [ ] captions on for Video 3 (still processing on 2026-11-20)

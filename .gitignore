@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .streamlit/secrets.toml
 .claude/
+
+# Video recordings go to YouTube, not GitHub
+*.mp4
+*.mov

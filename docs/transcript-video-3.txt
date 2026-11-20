@@ -1,14 +1,22 @@
-Video 3 transcript (5:00 max): Committee presentation, opening with the app running live
+﻿Video 3 transcript (5:00 max): Committee presentation, opening with the app running live
 Retirement Mandate Check | FIN 439 Project 2 | Brandon Oganovich
 
-[On screen: Open on the live app: near-retiree, sample portfolio, Overview tab]
+[On screen: Live app, Overview tab]
 This is my Retirement Mandate Check, running live. Two statements first. I used Claude, from Anthropic, through Claude Code, to build and test this app and to draft my documents, and its optional chat helper also calls Claude. The analysis and the decision are mine; this is education, not investment advice, and I am not a financial advisor.
 
-[On screen: Live app: Overview tab]
-The client is a near-retiree, about eight years out, with 500,000 dollars. Here is their current portfolio: 90 percent stocks, half of it in one fund. Expected return 8.3 percent, but an estimated bad-year loss of 14 percent. It fails three rules, and the app names each one. Below is the fix: sell 25 points of stock funds, and put 15 into Treasury bills and 10 into Treasuries.
+Our client is a near-retiree, about eight years out, with 500,000 dollars. Their portfolio is 90 percent stocks. The app says FAIL: an 8.3 percent expected return, but an estimated 14 percent loss in a one-in-twenty bad year, against a 10 percent limit. On the right it names each broken rule and the smallest fix: sell 25 points of stock funds, and buy Treasury bills and Treasuries.
 
-[On screen: Live app: click the Mandate and portfolios tab]
-Every portfolio gets the same eight rules and a pass or fail verdict, compared against a 60/40 benchmark.
+[On screen: Live app, Mandate and portfolios tab]
+Every portfolio gets the same eight rules. Equal weight passes, inverse volatility fails, and the constrained portfolio passes at 7.3 percent.
+
+[On screen: Live app, Stress run tab]
+The stress run changes one input at a time. All twelve scenarios still find a passing portfolio, but four move the weights more than 25 percent, so the rule says pilot, not adopt.
+
+[On screen: Live app, Retirement outlook tab, then Constrained portfolio selected]
+For the client's retirement: today's portfolio gives a median balance of about 901,000 dollars at retirement. Switching to the constrained mix lowers that to 852,000, but raises the poor-markets balance from 561,000 to 596,000. Less upside, a better floor.
+
+[On screen: Live app, sidebar Upload a CSV with example_upload.csv, then Overview tab]
+Any portfolio can be uploaded. This file holds VOO, which isn't on the approved list, and its bad-year loss is 10.04 percent, so it fails two rules, and the fix sells the VOO.
 
 [On screen: Switch to the slides]
 My recommendation: approve a 12-month pilot. The app's output is a starting point that a person reviews, and trades stay inside a set range. The process passes every limit in the base case and in all twelve stress scenarios, but in four of them the fund weights move more than 25 percent, so it isn't ready to trade on automatically.

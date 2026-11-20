@@ -27,7 +27,7 @@ The browser opens at http://localhost:8501. No account, API key or internet conn
 Then:
 
 1. Pick the client in the sidebar (mid-career saver, near-retiree, or already retired).
-2. Leave "Sample portfolio" selected, or upload `sample_portfolio.csv`, or your own CSV with columns `ticker` and `weight` (or `value`). Supported tickers: VTI, VT, SCHD, IEF, LQD, BIL, VOO.
+2. Leave "Sample portfolio" selected, or upload `sample_portfolio.csv` (percent weights) or `example_upload.csv` (dollar values), or your own CSV with columns `ticker` and `weight` (or `value`). Supported tickers: VTI, VT, SCHD, IEF, LQD, BIL, VOO.
 3. Answer the helper's question (growth first or protection first).
 4. Read the tabs left to right.
 
