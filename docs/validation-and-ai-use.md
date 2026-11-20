@@ -61,7 +61,7 @@ See `docs/decision-memo.md`. Base case (near-retiree, growth first): constrained
 
 ## 5. Locked Changed-Input Record
 
-**This section must be written by me without AI, and committed to GitHub before I run the change.** Claude left it blank on purpose and did not run this change.
+**The prediction below is mine, made without AI, and committed to GitHub before I run the change.** I wrote my answers myself on 2026-11-20 and sent them to Claude, which copied them into this table word for word. Claude did not suggest, check or comment on the prediction, and did not run the change.
 
 Suggested change (I may pick another in the app's "Changed-input run" tab): inflation (CPI) assumption from 2.50% to 3.50%, near-retiree, growth first, sample portfolio loaded. Do not pick anything already shown in the stress run, because that result is already visible.
 
@@ -74,11 +74,11 @@ Steps, in this order:
 
 | Field | Entry |
 |---|---|
-| Input changed | |
-| Old value (units) | |
-| New value (units) | |
-| My AI-off prediction: direction of stocks %, expected return, verdict | |
-| Why I expect that | |
+| Input changed | Inflation (CPI) assumption. |
+| Old value (units) | 2.50% per year. |
+| New value (units) | 3.50% per year. |
+| My AI-off prediction: direction of stocks %, expected return, verdict | For the near-retiree, growth-first, sample portfolio: (a) Stocks %: Stay the same at 65%. (b) Expected return: Stay the same at approximately 7.27% per year. (c) Verdict: Still PASS. No rule breaks. |
+| Why I expect that | Growth first already selects the highest expected return within the portfolio limits, and changing CPI does not change the return estimates or those limits. Higher inflation raises the required nominal return from 5.50% to 6.50%, which remains below the portfolio's 7.27% expected return. |
 | Commit link and time of the prediction (before the run) | |
 | Actual result (from the app) | |
 | Expected direction vs actual direction | |
