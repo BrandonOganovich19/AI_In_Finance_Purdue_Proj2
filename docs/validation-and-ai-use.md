@@ -61,7 +61,7 @@ See `docs/decision-memo.md`. Base case (near-retiree, growth first): constrained
 
 ## 5. Locked Changed-Input Record
 
-**The prediction below is mine, made without AI, and committed to GitHub before I run the change.** I wrote my answers myself on 2026-11-20 and sent them to Claude, which copied them into this table word for word. Claude did not suggest, check or comment on the prediction, and did not run the change.
+**The prediction below is mine, made without AI, and committed to GitHub before I run the change.** I wrote my answers myself on 2026-11-20 and sent them to Claude, which copied them into this table word for word. Claude did not suggest, check or comment on the prediction. After I confirmed the prediction was committed to GitHub, Claude ran the change and filled in rows 6 to 8 from the app; rows 9 and 10 were drafted by Claude for me to review.
 
 Suggested change (I may pick another in the app's "Changed-input run" tab): inflation (CPI) assumption from 2.50% to 3.50%, near-retiree, growth first, sample portfolio loaded. Do not pick anything already shown in the stress run, because that result is already visible.
 
@@ -79,18 +79,18 @@ Steps, in this order:
 | New value (units) | 3.50% per year. |
 | My AI-off prediction: direction of stocks %, expected return, verdict | For the near-retiree, growth-first, sample portfolio: (a) Stocks %: Stay the same at 65%. (b) Expected return: Stay the same at approximately 7.27% per year. (c) Verdict: Still PASS. No rule breaks. |
 | Why I expect that | Growth first already selects the highest expected return within the portfolio limits, and changing CPI does not change the return estimates or those limits. Higher inflation raises the required nominal return from 5.50% to 6.50%, which remains below the portfolio's 7.27% expected return. |
-| Commit link and time of the prediction (before the run) | |
-| Actual result (from the app) | |
-| Expected direction vs actual direction | |
-| Effect on the decision | |
-| If they differ: what I got wrong | |
+| Commit link and time of the prediction (before the run) | https://github.com/BrandonOganovich19/AI-In_finance-439-project2/commit/bfaa11a4f2490337260f5417afa2fec19de2983c , 2026-11-20 14:22:13 UTC (08:22 Central). Claude first ran the change after this, at about 14:24 UTC, after confirming the prediction was in this commit. |
+| Actual result (from the app) | "Changed-input run" tab, Inflation (CPI) 2.50% -> 3.50%. Constrained portfolio before / after: verdict PASS / PASS; expected return 7.27% / 7.27%; bad-year loss 9.99% / 9.99%; stocks 65.0% / 65.0%; weights 15/20/30/10/10/15 both times (VTI/VT/SCHD/IEF/LQD/BIL); 0.0% turnover. The return target rose from 5.5% to 6.5%. |
+| Expected direction vs actual direction | Stocks %: predicted no change, actual no change. Expected return: predicted no change (about 7.27%), actual no change (7.27%). Verdict: predicted still PASS, actual PASS. All three match. |
+| Effect on the decision | *(Drafted by Claude from the app's output; Brandon to confirm or edit.)* The base portfolio and the recommendation (pilot) do not change. But the margin shrinks: expected return is now 0.77 points above the 6.5% target instead of 1.77 points above 5.5%. Re-running the stress test at 3.50% CPI, three of twelve scenarios no longer reach the target (stock premium 2 points lower: 5.94%; 10-year yield 1 point lower: 6.35%; all volatilities 25% higher: 6.33%). Before, none failed. Higher inflation makes the plan more fragile, so CPI should be added to the monitoring triggers. |
+| If they differ: what I got wrong | *(Drafted by Claude; Brandon to confirm or edit.)* They did not differ. My reasoning held: CPI only moves the return target, not the estimates or the limits, and the target stayed below 7.27%. What I did not predict was the knock-on effect on the stress run (above). |
 
 ## 6. AI use
 
 | Date | Tool / model | Used for | How I checked it |
 |---|---|---|---|
 | 2026-11-16 | Claude Code desktop, Claude Fable 5.2 | Read the assignment; asked me four design questions; wrote `engine.py`, `app.py`, `coach.py`, the tests; drafted README, memo and this record | 23 unit tests including hand-worked cases; **one output I checked myself: ____ (Brandon to fill in, also used in Video 1)** |
-| 2026-11-20 | Claude Code desktop, Claude Opus 5.5 | Checked the three DGS10 values against FRED; ran the README in a fresh Python environment; drafted the video scripts (`docs/video-scripts.md`); finished the memo's "Who decided what" table from my answers | I read the scripts and the memo before recording and submitting |
+| 2026-11-20 | Claude Code desktop, Claude Opus 5.5 | Checked the three DGS10 values against FRED; ran the README in a fresh Python environment; drafted the video scripts (`docs/video-scripts.md`); finished the memo's "Who decided what" table from my answers; copied my AI-off prediction into section 5 word for word; after the prediction was on GitHub, ran the changed input and drafted rows 9 and 10 | I read the scripts and the memo before recording and submitting |
 | At run time, optional | Claude Opus 5.5 through the Anthropic API | In-app chat that explains the app's own numbers | Restricted to a facts block; percentages not in the facts are flagged on screen |
 | Oct 2026 | ChatGPT / Codex | Labs 13 to 17 (mandate, price downloads, FRED vintages) reused here | Lab verification files |
 
