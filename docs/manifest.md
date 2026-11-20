@@ -18,7 +18,7 @@ Repository: https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2 (br
 | Video 2 (5:00 max): code walkthrough | YouTube ____ , duration ____ |
 | Video 3 (5:00 max): committee presentation, opens with the app running live | YouTube ____ , duration ____ |
 | Transcripts | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/transcript-video-1.txt , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/transcript-video-2.txt , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/transcript-video-3.txt |
-| Slides for the three videos (drafted with Claude) | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/project2-video-slides.pptx |
+| Slides, one deck per video (drafted with Claude) | https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/video-1-slides.pptx , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/video-2-slides.pptx , https://github.com/BrandonOganovich19/AI_In_Finance_Purdue_Proj2/blob/main/docs/video-3-slides.pptx |
 
 Before submitting:
 
