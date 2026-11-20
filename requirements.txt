@@ -1,0 +1,5 @@
+streamlit>=1.40,<2
+pandas>=2.0
+numpy>=1.26
+# Optional, only for the chat helper:
+# anthropic>=0.80
