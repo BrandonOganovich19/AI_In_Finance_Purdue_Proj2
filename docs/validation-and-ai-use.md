@@ -57,7 +57,7 @@ See `docs/decision-memo.md`. Base case (near-retiree, growth first): constrained
 - History chart is in-sample.
 - Expense ratios typed by hand, not verified against fact sheets.
 - Fresh-environment run (Claude, 2026-11-20): a new Python virtual environment, `pip install -r requirements.txt` (streamlit 1.67.0, pandas 3.1.1, numpy 2.5.5), 23 tests pass, app loads with no errors.
-- The first cold run by another person has not been done yet. **Brandon: have someone follow the README on a clean machine and record the first failure here.**
+- Cold run by another person (reported 2026-11-20): someone other than me followed the README on their own computer, and the app installed and ran. No failure was found.
 
 ## 5. Locked Changed-Input Record
 
